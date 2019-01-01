@@ -30,3 +30,5 @@ I removed a handful of ticket functionalities such as Requester, Assignee, Share
 
 I used a single login session to declare global variables to track the OAuth2 token and the user's company.  Although global variables are heavily frowned upon in general, this solution was the most secure and modular approach that was available at the time.  Passing the token between url requests could allow unauthorized access via url, and using cookies or the local storage would be spotty and unreliable, depending on the users' browser caching settings.  
 
+Using the "Log Out" button will clear the session, but not the browser cache, so it is possible to view a logged out users' information via the browser's "back" button.  Patching this is slightly more complex than the scope of this project would entail.  
+
