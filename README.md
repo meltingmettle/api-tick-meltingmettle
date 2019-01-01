@@ -8,8 +8,7 @@ As of now, the actual code is in a private repo, so I created this repo to store
 # Zendesk API Ticket reader
 Supports ticket creation, ticket listing/viewing, and ticket updates.  
 
-I added an update capability as well, because it seemed strange to not have one.
-Included Datatables.
+Application supports additional update capability.
 
 Live version here:
 https://zendesk-api-meltingmettle.herokuapp.com/
