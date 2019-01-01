@@ -1,12 +1,6 @@
-# api-tick-meltingmettle
+# ZD Ticket Application
 
-Basic API tool for a note-managing app challenge. 
-
-As of now, the actual code is in a private repo, so I created this repo to store the public README until I'm cleared to release the source code publicly.  
-
-
-# Zendesk API Ticket reader
-Supports ticket creation, ticket listing/viewing, and ticket updates.  
+Ticket REST API tool for a Zendesk ticket application. Supports ticket creation, ticket listing/viewing, and ticket updates.  
 
 Application supports additional update capability.
 
@@ -23,6 +17,9 @@ Dependencies
 requests
 datetime (This is automatically done by Zendesk's API, but I calculated an independent created_at stamp)
 DataTables
+
+As of now, the actual code is in a private repo, so I created this repo to store the public README until I'm cleared to release the source code publicly.  
+
 
 # Design challenges and time-constraint decisions:
 Most notably, I opted to use Python on a Django framework over Ruby on Rails.
