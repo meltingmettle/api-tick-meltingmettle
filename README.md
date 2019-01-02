@@ -1,10 +1,14 @@
 # ZD Ticket Application
 
-Ticket REST API tool for a Zendesk ticket application. Supports ticket creation, ticket listing/viewing, and ticket updates. 
+Basic customer support ticket management tool. Supports ticket creation, ticket listing/viewing, and ticket updates. 
+
+
 Please note that Heroku dynos take ~30 seconds to start up if a site has not been accessed recently, so your first load may take up to a minute.  
 
-Application supports additional update capability.
+Using this app requires a Zendesk account.  If don't have an account, you can create a free trial account on zendesk.com/register, where the best customer experiences are built.
 
+
+Application supports additional update capability.
 Live version here:
 https://zendesk-api-meltingmettle.herokuapp.com/
 
@@ -24,20 +28,28 @@ As of now, the actual code is in a private repo, so I created this repo to store
 
 # Design challenges and time-constraint decisions:
 Most notably, I opted to use Python on a Django framework over Ruby on Rails.
-Although I was more familiar with the Rails framework, I chose to use Python and learn Django, due to the time constraints and solo nature of this project.  Much of my Rails experience was on a development team where I could get help with debugging or unfamiliar concepts, whereas working in Python granted the assurance that I would be able to finish well within the due date. (This ended up costing time later, but I also got to learn some new things)  
+Although I was more familiar with the Rails framework, I chose to use Python and learn Django, largely due to the solo nature of this project.  Much of my Rails experience was on a development team where I could get help with debugging or unfamiliar concepts, whereas working in Python granted the assurance that I would be able to finish well within the due date. (This ended up costing time later, but I also got to learn some new things)  
 (Also a convinient excuse to learn Django)
-
-I removed a handful of ticket functionalities such as Requester, Assignee, Shared Ticket and a couple others as they wouldn't make sense within a single-user app and it would be difficult to do correctly without auto-complete or referencing a list of fellow agents, which was also difficult to test given the time limitations.
-
+</br>
+</br>
+I removed a handful of ticket functionalities such as Requester, Assignee, Shared Ticket and a couple others as they wouldn't make sense within a single-user app and it would be difficult to do correctly without auto-complete or referencing a list of fellow agents, which was also difficult to implement and test given the time limitations.
+</br>
+</br>
 I used a single login session to declare global variables to track the OAuth2 token and the user's company.  Although global variables are heavily frowned upon in general, this solution was the most secure and modular approach that was available at the time.  Passing the token between url requests could allow unauthorized access via url, and using cookies or the local storage would be spotty and unreliable, depending on the users' browser caching settings.  
-
-Using the "Log Out" button will clear the session, but not the browser cache, so it is possible to view a logged out users' information via the browser's "back" button.  Patching this is slightly more complex than the scope of this project would entail.  
-
+</br>
+</br>
+Using the "Log Out" button will clear the session, but not the browser cache, so it is possible to view a logged out users' information via the browser's "back" button.  Patching this is slightly more complex than the scope of this project would entail.  Furthermore, the global attributes used to authenticate sessions expire in a somewhat unpredictable manner.
+</br>
+</br>
 # Minor front end pet peeves
 I hard-coded the toolbars for now, as JQuery is not supported on local servers.  Heroku provides 1000 hours of free server hosting, so I minimized live-testing strictly to functionality to avoid the possibility of accidentally running out of free hosting.  
+</br>
+</br>
 
 In addition, I didn't have the chance to reformat the JSONs returned from the API, most notably the lower-case object attributes and the compact-but-difficult-to-read API-generated timestamps. 
 
+</br>
+</br>
 # Lifesaver DJango Tutorials which are still up to date (Django 2.0 or greater), if you're interested in learning! 
 https://medium.com/agatha-codes/9-straightforward-steps-for-deploying-your-django-app-with-heroku-82b952652fb4 </br>
 https://www.youtube.com/watch?v=QVX-etwgvJ8 </br>
