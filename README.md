@@ -32,3 +32,9 @@ I used a single login session to declare global variables to track the OAuth2 to
 
 Using the "Log Out" button will clear the session, but not the browser cache, so it is possible to view a logged out users' information via the browser's "back" button.  Patching this is slightly more complex than the scope of this project would entail.  
 
+
+# Lifesaver DJango Tutorials which are still up to date (Django 2.0 or greater), if you're interested in learning! 
+https://medium.com/agatha-codes/9-straightforward-steps-for-deploying-your-django-app-with-heroku-82b952652fb4 </br>
+https://www.youtube.com/watch?v=QVX-etwgvJ8 </br>
+http://www.learningaboutelectronics.com/Articles/How-to-create-a-drop-down-list-in-a-Django-form.php </br>
+
