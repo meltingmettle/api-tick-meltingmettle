@@ -7,16 +7,16 @@ Application supports additional update capability.
 Live version here:
 https://zendesk-api-meltingmettle.herokuapp.com/
 
-Software
-Python 3.7.1
-Django 2.1 
-DataTables
-HTML5/CSS3/JS
+Software </br>
+Python 3.7.1 </br>
+Django 2.1  </br>
+DataTables </br>
+HTML5/CSS3/JS </br>
 
-Dependencies
-requests
-datetime (This is automatically done by Zendesk's API, but I calculated an independent created_at stamp)
-DataTables
+Dependencies </br>
+requests </br>
+datetime (This is automatically done by Zendesk's API, but I calculated an independent created_at stamp) </br>
+DataTables </br>
 
 As of now, the actual code is in a private repo, so I created this repo to store the public README until I'm cleared to release the source code publicly.  
 
