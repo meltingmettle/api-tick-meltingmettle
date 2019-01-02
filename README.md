@@ -1,6 +1,7 @@
 # ZD Ticket Application
 
-Ticket REST API tool for a Zendesk ticket application. Supports ticket creation, ticket listing/viewing, and ticket updates.  
+Ticket REST API tool for a Zendesk ticket application. Supports ticket creation, ticket listing/viewing, and ticket updates. 
+Please note that Heroku dynos take ~30 seconds to start up if a site has not been accessed recently, so your first load may take up to a minute.  
 
 Application supports additional update capability.
 
@@ -32,6 +33,10 @@ I used a single login session to declare global variables to track the OAuth2 to
 
 Using the "Log Out" button will clear the session, but not the browser cache, so it is possible to view a logged out users' information via the browser's "back" button.  Patching this is slightly more complex than the scope of this project would entail.  
 
+# Minor front end pet peeves
+I hard-coded the toolbars for now, as JQuery is not supported on local servers.  Heroku provides 1000 hours of free server hosting, so I minimized live-testing strictly to functionality to avoid the possibility of accidentally running out of free hosting.  
+
+In addition, I didn't have the chance to reformat the JSONs returned from the API, most notably the lower-case object attributes and the compact-but-difficult-to-read API-generated timestamps. 
 
 # Lifesaver DJango Tutorials which are still up to date (Django 2.0 or greater), if you're interested in learning! 
 https://medium.com/agatha-codes/9-straightforward-steps-for-deploying-your-django-app-with-heroku-82b952652fb4 </br>
