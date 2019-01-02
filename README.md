@@ -50,6 +50,8 @@ In addition, I didn't have the chance to reformat the JSONs returned from the AP
 
 </br>
 </br>
+
+
 # Lifesaver DJango Tutorials which are still up to date (Django 2.0 or greater), if you're interested in learning! 
 https://medium.com/agatha-codes/9-straightforward-steps-for-deploying-your-django-app-with-heroku-82b952652fb4 </br>
 https://www.youtube.com/watch?v=QVX-etwgvJ8 </br>
