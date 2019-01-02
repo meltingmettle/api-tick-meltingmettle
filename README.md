@@ -5,7 +5,7 @@ Basic customer support ticket management tool. Supports ticket creation, ticket 
 
 Please note that Heroku dynos take ~30 seconds to start up if a site has not been accessed recently, so your first load may take up to a minute.  
 
-Using this app requires a Zendesk account.  If don't have an account, you can create a free trial account on zendesk.com/register, where the best customer experiences are built.
+Using this app requires a Zendesk account.  If don't have an account, you can create a free trial account at www.zendesk.com/register, Zendesk's main website, where the best customer experiences are built.
 
 
 Application supports additional update capability.
