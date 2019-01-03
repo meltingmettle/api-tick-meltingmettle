@@ -8,13 +8,14 @@ Please note that Heroku dynos take ~30 seconds to start up if a site has not bee
 
 **Known issue**: The global variables expire somewhat inconsistently.  If a button sends you back to the login page because of expired tokens, please simply log in again.  This bug will eventually be patched by using the session cache to store tokens.  The local server is unaffected by this issue.
 
-Software </br>
+**Software/toolkits** </br>
 Python 3.7.1 </br>
 Django 2.1  </br>
+GUnicorn </br>
 DataTables </br>
 HTML5/CSS3/JS </br>
 
-Dependencies </br>
+**Dependencies** </br>
 requests </br>
 datetime (This is automatically done by the ZD API, but I calculated an independent created_at stamp) </br>
 DataTables </br>
