@@ -15,7 +15,7 @@ HTML5/CSS3/JS </br>
 
 Dependencies </br>
 requests </br>
-datetime (This is automatically done by Zendesk's API, but I calculated an independent created_at stamp) </br>
+datetime (This is automatically done by the ZD API, but I calculated an independent created_at stamp) </br>
 DataTables </br>
 
 As of now, the actual code is in a private repo, so I created this repo to store the public README until I'm cleared to release the source code publicly.  
