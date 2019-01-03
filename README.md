@@ -6,7 +6,7 @@ Live version here: </br>
 https://emmettling.me/zd_api_meltingmettle.html</br>
 Please note that Heroku dynos take ~30 seconds to start up if a site has not been accessed recently, so your first load may take up to a minute.  
 
-**Known issue**: The global variables expire somewhat inconsistently.  If a button sends you back to the login page because of expired tokens, please simply log in again.  This bug will eventually be patched by using the session cache to authenticate the token.  The local server is unaffected by this issue.
+**Known issue**: The global variables expire somewhat inconsistently.  If a button sends you back to the login page because of expired tokens, please simply log in again.  This bug will eventually be patched by using the session cache to store tokens.  The local server is unaffected by this issue.
 
 Software </br>
 Python 3.7.1 </br>
