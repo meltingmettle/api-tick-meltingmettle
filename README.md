@@ -30,7 +30,7 @@ Although I was more familiar with the Rails framework, I chose to use Python and
 (Also a convinient excuse to learn Django)
 </br>
 </br>
-I removed a handful of ticket functionalities such as Requester, Assignee, Shared Ticket and a couple others as they wouldn't make sense within a single-user app and it would be difficult to do correctly without auto-complete or referencing a list of fellow agents, which was also difficult to implement and test given the time limitations.
+I removed a handful of ticket functionalities such as Requester, Assignee, Shared Ticket and a couple others as they wouldn't make sense within a single-user app and it would be difficult to implement and test in the given time frame without auto-complete or referencing a list of fellow agents.
 </br>
 </br>
 I used a single login session to declare global variables to track the OAuth2 token and the user's company.  Although global variables are heavily frowned upon in general, this solution was the most secure and modular approach that was available at the time.  Passing the token between url requests could allow unauthorized access via url, and using cookies or the local storage would be spotty and unreliable, depending on the users' browser caching settings.  
