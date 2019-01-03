@@ -40,7 +40,7 @@ Using the "Log Out" button will clear the session, but not the browser cache, so
 </br>
 </br>
 # Minor front end pet peeves
-I hard-coded the toolbars for now, as JQuery is not supported on local servers.  Heroku provides 1000 hours of free server hosting per month, so I minimized live-testing strictly to functionality to avoid the possibility of accidentally running out of free hosting.  
+I hard-coded the toolbars for now, as JQuery is not supported on local servers.  Heroku provides 1000 hours of free server hosting per month, so I limited live-testing strictly to functionality to avoid the possibility of accidentally running out of free hosting.  
 </br>
 </br>
 
