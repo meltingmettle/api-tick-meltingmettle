@@ -40,7 +40,7 @@ Using the "Log Out" button will clear the session, but not the browser cache, so
 </br>
 </br>
 # Minor front end pet peeves
-I hard-coded the toolbars for now, as JQuery is not supported on local servers.  Heroku provides 1000 hours of free server hosting, so I minimized live-testing strictly to functionality to avoid the possibility of accidentally running out of free hosting.  
+I hard-coded the toolbars for now, as JQuery is not supported on local servers.  Heroku provides 1000 hours of free server hosting per month, so I minimized live-testing strictly to functionality to avoid the possibility of accidentally running out of free hosting.  
 </br>
 </br>
 
@@ -51,7 +51,10 @@ In addition, I didn't have the chance to reformat the JSONs returned from the AP
 
 
 # Lifesaver DJango Tutorials which are still up to date (Django 2.0 or greater), if you're interested in learning! 
+(In addition to the official Django docs and tutorials)
 https://medium.com/agatha-codes/9-straightforward-steps-for-deploying-your-django-app-with-heroku-82b952652fb4 </br>
 https://www.youtube.com/watch?v=QVX-etwgvJ8 </br>
 http://www.learningaboutelectronics.com/Articles/How-to-create-a-drop-down-list-in-a-Django-form.php </br>
 
+
+--Emmett Ling
